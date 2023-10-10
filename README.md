@@ -22,3 +22,25 @@ https://truelogic.org/wordpress/2023/09/21/working-with-mysql-in-vc/
 For Linux, the downloads can be found here: https://dev.mysql.com/downloads/connector/cpp/
 Just download the tar and unzip contents into a folder. In your Project Config or Cmake File, you need to add the folders for includes and libs.
 
+**SAMPLE CODE**  
+```
+TrueMySql* mysql = new TrueMySql(HOST, "3306", DB, USER, PWD);
+	mysql->getConnection();
+	if (!mysql->isConnected()) {
+		cout << "Could not connect to mysql:" << mysql->getError() << endl;
+		return EXIT_FAILURE;
+	}
+
+	sql::ResultSet* rst = mysql->getResultSet("Select * from Graph");
+	if (rst == NULL) {
+		cout << "Error :" << mysql->getError() << endl;
+	}
+	else {
+		while (rst->next()) {
+			cout << "ID=" << rst->getInt("id") << "," << rst->getString("name") << endl;
+		}
+		delete rst;
+	}
+mysql->closeConnection();
+
+```
