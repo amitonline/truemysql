@@ -1,7 +1,7 @@
 # truemysql
 C++ class to work with MySQL C++ connector
 
-**OVERVIEW**
+**OVERVIEW**  
 The aim was to encapsulate all the basic mysql functions which an application would need to work with the MySql Connector for C++. 
 The following functions are in place:
  - Opening and closing connections
@@ -10,12 +10,12 @@ The following functions are in place:
  - Toggle transactions
 
 
-**FILES**
-truemysql.h - header for includes
-truemysql.cpp - class implementation
-main.cpp - examples of how to use the above class
+**FILES**  
+truemysql.h - header for includes  
+truemysql.cpp - class implementation  
+main.cpp - examples of how to use the above class  
 
-**PRE-REQUISITES**
+**PRE-REQUISITES**  
 For vc++ apps to work with MySql databases, it is assumed that MySql Connector for C++ is installed on the machine. Instructions to install it for Windows are given here:
 https://truelogic.org/wordpress/2023/09/21/working-with-mysql-in-vc/
 
