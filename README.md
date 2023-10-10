@@ -1,5 +1,5 @@
 # truemysql
-C++ class to work with MySQL C++ connector
+C++ class to work with MySQL C++ connector for Windows and Linux
 
 **OVERVIEW**  
 The aim was to encapsulate all the basic mysql functions which an application would need to work with the MySql Connector for C++. 
