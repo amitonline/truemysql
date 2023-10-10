@@ -2,7 +2,7 @@
 C++ class to work with MySQL C++ connector
 
 **OVERVIEW**
-The aim was to encapsulaTe all the basic mysql functions which an application would need to work with the MySql Connector for C++. 
+The aim was to encapsulate all the basic mysql functions which an application would need to work with the MySql Connector for C++. 
 The following functions are in place:
  - Opening and closing connections
  - Executing queries which do not return any data - with and without parameterized arguments
